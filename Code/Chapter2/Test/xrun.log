@@ -1,0 +1,137 @@
+xrun(64): 23.03-s007: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.03-s007: Started on May 16, 2025 at 15:18:03 +07
+xrun
+	test.sv
+	-access +r
+Recompiling... reason: file './test.sv' is newer than expected.
+	expected: Fri May 16 15:17:40 2025
+	actual:   Fri May 16 15:17:59 2025
+file: test.sv
+	module worklib.test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		test
+	Building instance overlay tables: ....................
+        my_mem[2] = my_logicmem[4]; //my_mem[2] = 00
+                              |
+xmelab: *W,BNDMEM (./test.sv,51|30): Memory index out of declared bounds.
+        my_logic = my_logicmem[4]; //my_logic = X
+                             |
+xmelab: *W,BNDMEM (./test.sv,53|29): Memory index out of declared bounds.
+        my_logicmem[3] = my_mem[3];//my_logicmem[3] = 0000
+                              |
+xmelab: *W,BNDMEM (./test.sv,55|30): Memory index out of declared bounds.
+        my_mem[3] = my_logic;//my_mem[3] = 8'b0
+             |
+xmelab: *W,BNDMEM (./test.sv,57|13): Memory index out of declared bounds.
+        $display("Question d: My_mem[3] = my_logic = %h", my_mem[3]);
+                                                               |
+xmelab: *W,BNDMEM (./test.sv,58|63): Memory index out of declared bounds.
+        my_logic = my_logicmem[my_logicmem[41]];//my_logic = X
+                                         |
+xmelab: *W,BNDMEM (./test.sv,63|41): Memory index out of declared bounds.
+		my_array1[29][4] = 1'b1;
+		        |
+xmelab: *W,BNDWRN (./test.sv,100|10): Bit-select or part-select index out of declared bounds.
+ Done
+	Generating native compiled code:
+		worklib.test:sv <0x3ce80bb4>
+			streams:  12, words: 56667
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 1       1
+		Registers:              31      31
+		Initial blocks:         15      15
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.test:sv
+Loading snapshot worklib.test:sv .................... Done
+xcelium> source /tools/cx/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+=======================================================
+================Quesion 1==============================
+The answer for question 1:
+my_integer = X
+my_int value in hex = 00000f00
+my_bit value in decimal = 32768
+my_short_int1 value in decimal = -32768
+my_short_int2 value in decimal = 32767
+==============================================================
+=======================QUESTION 2=============================
+Question a: My_mem[2] = my_logicmem[4] = 00
+Question b: my_logic = my_logicmem[4] = x
+Question c: my_logicmem[3] = my_mem[3] = 0
+Question d: My_mem[3] = my_logic = 00
+Question e: My_logic = my_logicmem[1] = 1
+Question f: My_logic = my_mem[1] = 5
+Question g: my_logic = my_logicmem[my_logicmem[41]] = x
+=========================================================================
+=====================QUESTION 3==========================================
+For: my_arrays[0][5] = 0
+For: my_arrays[0][4] = 1
+For: my_arrays[1][5] = 0
+For: my_arrays[1][4] = 0
+For: my_arrays[2][5] = 1
+For: my_arrays[2][4] = 1
+For: my_arrays[3][5] = 1
+For: my_arrays[3][4] = 0
+Foreach: my_arrays[0][5] = 0
+Foreach: my_arrays[0][4] = 1
+Foreach: my_arrays[1][5] = 0
+Foreach: my_arrays[1][4] = 0
+Foreach: my_arrays[2][5] = 1
+Foreach: my_arrays[2][4] = 1
+Foreach: my_arrays[3][5] = 1
+Foreach: my_arrays[3][4] = 0
+======================================================================
+==========================QUESTION 4==================================
+my_array1 = '{'{'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx}, '{'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx}, '{'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx}, '{'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx}, '{'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'hx, 'h1}}
+===============================================================================
+==============================QUESTION 6========================================
+Question 6
+Street[0] = sTejon
+Street[2] = Platte
+Street[2] = Bijou
+pop_back = Boulder
+street.size =           4
+=========================================================
+========================QUESTION 7=======================
+mem[00000] = a50400
+mem[00400] = 123456
+mem[00401] = 789abc
+mem[fffff] = 0f1e2d
+Number of elements in mem: 4124991
+================================================================
+=======================QUESTION 8===============================
+Sum of the queue: 128
+Max of the queue: 127
+Min of the queue: -1
+Sort the queue: '{-1, 2, 127}
+Index negative : '{0}
+Positive value : '{2, 127}
+Queue has : '{-1, 2, 127}
+Reverse queue has : '{-33554432, 1073741824, -1}
+==============================================================
+=========================QUESSTION 9==========================
+My type:| Header | cmd | data | crc | 
+======================================
+        | 5a     | xx  | xx   | xx  | 
+==============================================================
+========================QUESTION 10===========================
+Unpacked array k is : '{'h0, 'hf, 'he, 'hd}
+Stream k into i_pack right to left(bit): 0000111101111011
+Stream k into i_pack right to left(nibble): 0000111111101101
+K after type converted r and assing it to k[0] : '{'h4, 'hf, 'he, 'hd}
+====================================================================
+=====================QUESTION 11====================================
+|Time     | Opcode  |
+|0      | 0 - ADD
+|10000      | 1 - SUB
+|20000      | 2 - BIT_WISE
+|30000      | 3 - REDUC_OR
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	23.03-s007: Exiting on May 16, 2025 at 15:18:03 +07  (total: 00:00:00)
