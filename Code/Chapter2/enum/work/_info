@@ -1,0 +1,50 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/khang/Documents/my_code/SystemVerilog/enum
+venum_test
+2enum.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1745035971
+!i10b 1
+!s100 ZnHB4WPMn_M9h^gife39O3
+I1Sc38M5H6PY3]Qn0Z`_l]2
+S1
+R1
+w1745035966
+8enum.sv
+Fenum.sv
+!i122 0
+L0 1 16
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2024.1;79
+r1
+!s85 0
+31
+!s108 1745035971.000000
+!s107 enum.sv|
+!s90 enum.sv|-work|./work|-statslog|qrun.out/stats_log|-writesessionid|+qrun.out/top_dus|-csession=incr|-csessionid=0|
+!i113 0
+o-work ./work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z2 tCvgOpt 0
+Tqrun_opt
+!s110 1745035832
+VY@ncIVBCLoU]<Za69dMI33
+04 9 4 work enum_test fast 0
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o+acc -work ./work
+R2
+nqrun_opt
+OL;O;2024.1;79
+R1

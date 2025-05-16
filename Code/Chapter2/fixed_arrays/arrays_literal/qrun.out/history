@@ -1,0 +1,6 @@
+- Entry: 1
+  Time: Tue Apr 15 10:25:48 2025
+  Command: qverilog arrays_literal +acc +r 
+- Entry: 2
+  Time: Tue Apr 15 10:27:17 2025
+  Command: qverilog arrays_literal.sv +acc +r 

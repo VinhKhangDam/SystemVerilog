@@ -1,0 +1,61 @@
+QuestaSim-64 qrun 2024.1 Utility 2024.02 Feb  1 2024
+Start time: 10:27:17 on Apr 15,2025
+qrun arrays_literal.sv "+acc" "+r" 
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+Start time: 10:27:17 on Apr 15,2025
+vlog arrays_literal.sv -work ./work -statslog qrun.out/stats_log -writesessionid "+qrun.out/top_dus" -csession=incr -csessionid=1 
+-- Compiling module arrays_literal
+
+Top level modules:
+	arrays_literal
+End time: 10:27:17 on Apr 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+Start time: 10:27:17 on Apr 15,2025
+vopt "+acc" -findtoplevels /home/khang/Documents/my_code/SystemVerilog/arrays/arrays_literal/work+1+ -work ./work -statslog qrun.out/stats_log -csession=incr -o qrun_opt -csessionid=2 
+
+Top level modules:
+	arrays_literal
+
+Analyzing design...
+-- Loading module arrays_literal
+Optimizing 1 design-unit (inlining 0/1 module instances):
+-- Optimizing module arrays_literal(fast)
+Optimized design name is qrun_opt
+End time: 10:27:17 on Apr 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+# vsim "+r" -lib ./work -c -do "run -all; quit -f" -statslog qrun.out/stats_log qrun_opt -appendlog -l qrun.log -csession=incr -csessionid=3 
+# Start time: 10:27:18 on Apr 15,2025
+# //  Questa Sim-64
+# //  Version 2024.1 linux_x86_64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.arrays_literal(fast)
+# run -all
+# a = '{1, 2, 3, 4}
+# b = '{4, 3, 2, 1, 0}
+# b = '{7, 6, 5, 1, 0}
+# a = '{8, 8, 8, 8}
+# a = '{42, 42, 42, 42}
+#  quit -f
+# End time: 10:27:19 on Apr 15,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+End time: 10:27:19 on Apr 15,2025, Elapsed time: 0:00:02
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vlog: Errors:   0, Warnings:   0
+    vopt: Errors:   0, Warnings:   1
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   1

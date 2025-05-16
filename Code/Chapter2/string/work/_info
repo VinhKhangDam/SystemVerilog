@@ -1,0 +1,51 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/khang/Documents/my_code/SystemVerilog/string
+Tqrun_opt
+Z2 !s110 1745036460
+Vh2Be31IcT]MAmMR<]:4QN0
+04 11 4 work string_test fast 0
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o+acc -work ./work
+Z3 tCvgOpt 0
+nqrun_opt
+OL;O;2024.1;79
+R1
+vstring_test
+Z4 2string.sv
+Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1745036625
+!i10b 1
+Z6 !s100 U317kfGJ:KPAXlU6G<RG90
+Z7 I[=1[OzhIMoC4^FR:P^3;m3
+S1
+R1
+w1745036624
+Z8 8string.sv
+Z9 Fstring.sv
+!i122 2
+Z10 L0 1 20
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2024.1;79
+r1
+!s85 0
+31
+!s108 1745036625.000000
+Z13 !s107 string.sv|
+Z14 !s90 string.sv|-work|./work|-statslog|qrun.out/stats_log|-writesessionid|+qrun.out/top_dus|-csession=incr|-csessionid=0|
+!i113 0
+Z15 o-work ./work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3

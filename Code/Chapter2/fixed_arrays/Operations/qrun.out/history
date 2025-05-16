@@ -1,0 +1,12 @@
+- Entry: 1
+  Time: Tue Apr 15 11:21:18 2025
+  Command: qverilog Comparator.sv +acc +r 
+- Entry: 2
+  Time: Tue Apr 15 11:28:27 2025
+  Command: qverilog Comaparator.sv +acc +r 
+- Entry: 3
+  Time: Tue Apr 15 11:29:32 2025
+  Command: qverilog Comparator.sv +acc +r 
+- Entry: 4
+  Time: Tue Apr 15 11:31:33 2025
+  Command: qverilog Comparator.sv +acc +r 

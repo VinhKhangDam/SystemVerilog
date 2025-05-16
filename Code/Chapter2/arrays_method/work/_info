@@ -1,0 +1,75 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/khang/Documents/my_code/SystemVerilog/arrays_method
+vmethod
+2arrays_method.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1744863619
+!i10b 1
+!s100 [FnK^REc`=JfUc2DR^4552
+I7Y6NRndEXW@hL?X5G:Fjk0
+S1
+R1
+w1744863618
+8arrays_method.sv
+Farrays_method.sv
+!i122 0
+L0 1 120
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2024.1;79
+r1
+!s85 0
+31
+!s108 1744863619.000000
+!s107 arrays_method.sv|
+!s90 arrays_method.sv|-work|./work|-statslog|qrun.out/stats_log|-writesessionid|+qrun.out/top_dus|-csession=incr|-csessionid=0|
+!i113 0
+o-work ./work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z3 tCvgOpt 0
+Tqrun_opt
+R2
+VUY`5eA9O]ec28`XmkK>?K3
+04 6 4 work method fast 0
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o+acc -work ./work
+R3
+nqrun_opt
+OL;O;2024.1;79

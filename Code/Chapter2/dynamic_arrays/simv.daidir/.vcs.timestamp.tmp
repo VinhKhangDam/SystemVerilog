@@ -1,0 +1,93 @@
+0
+22
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -O -I/tools/svc/V-2023.12-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -m32 -m32 -rdynamic
+-Mobjects= /tools/svc/V-2023.12-SP1/linux/lib/libvirsim.so /tools/svc/V-2023.12-SP1/linux/lib/liberrorinf.so /tools/svc/V-2023.12-SP1/linux/lib/libsnpsmalloc.so /tools/svc/V-2023.12-SP1/linux/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/tools/svc/V-2023.12-SP1/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/tools/svc/V-2023.12-SP1/linux/lib/ctype-stubs_32.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -m32 -I/tools/svc/V-2023.12-SP1/include
+-Mxllcflags=
+-gen_obj
+-picarchive
+-sverilog
+/tools/svc/V-2023.12-SP1/linux/bin/vcs1
+dynamic_arrays.sv
+59
+XDG_SESSION_TYPE=tty
+XDG_SESSION_ID=26
+XDG_SESSION_CLASS=user
+XDG_RUNTIME_DIR=/run/user/1003
+XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+VSCODE_IPC_HOOK_CLI=/run/user/1003/vscode-ipc-bd177de5-a827-4256-93eb-22531de927cb.sock
+VMR_MODE_FLAG=32
+VIVADO_HOME=/tools/Xilinx/Vivado/2024.2
+VERDI_HOME=/tools/svd/V-2023.12-SP1
+VCS_PYTHON3=/tools/svc/V-2023.12-SP1/linux/bin/Python-3.6.1/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_HOME=/tools/svc/V-2023.12-SP1
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+UNAME=/bin/uname
+TOOL_HOME=/tools/svc/V-2023.12-SP1/linux
+TERM_PROGRAM_VERSION=1.99.2
+TERM_PROGRAM=vscode
+TC_CAD_HOME=/tools/tc_cad_home_24.1.1.00
+SSL_CERT_FILE=/usr/lib/ssl/cert.pem
+SSL_CERT_DIR=/usr/lib/ssl/certs
+SSH_CONNECTION=192.168.1.3 53892 19.2.20.24 22
+SSH_CLIENT=192.168.1.3 53892 22
+SNPS_VCS_PYTHON3=/tools/svc/V-2023.12-SP1/linux/bin/Python-3.6.1/bin/python3
+SNPS_VCS_CLANG_PATH=/tools/svc/V-2023.12-SP1/linux/clang
+SNPS_INTERNAL_VCS_LINUX_OS=ubuntu
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SALT_LICENSE_SERVER=/tools/mq/license.dat
+RLM_LICENSE=/tools/tc_cad_home_24.1.1.00/TC_LIC/tc.dat
+QUARTUS_HOME=/tools/intelFPGA_lite/23.1std/quartus
+QT_XCB_GL_INTEGRATION=none
+OVA_UUM=0
+NC_HOME=/tools/cx/XCELIUM2303/tools.lnx86
+MTI_HOME=/tools/mq/2024.1/questasim
+MDV_HOME=/tools/ci/INCISIVE152/tools.lnx86
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_TIME=en_US.UTF-8
+LC_TELEPHONE=en_US.UTF-8
+LC_PAPER=en_US.UTF-8
+LC_NUMERIC=en_US.UTF-8
+LC_NAME=en_US.UTF-8
+LC_MONETARY=en_US.UTF-8
+LC_MEASUREMENT=en_US.UTF-8
+LC_IDENTIFICATION=en_US.UTF-8
+LC_ALL=C
+LC_ADDRESS=en_US.UTF-8
+DEBUGINFOD_URLS=https://debuginfod.ubuntu.com 
+DC_HOME=/tools/sd/W-2024.09-SP3
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1003/bus
+COLORTERM=truecolor
+CDS_LIC_FILE=/tools/cx/XCELIUM2303/share/license/license.dat:/tools/cg/DDI231/share/license/license.dat
+CDS_INST_DIR=/tools/cg/DDI231
+0
+0
+1
+1744773596 dynamic_arrays.sv
+4
+1709612988 /tools/svc/V-2023.12-SP1/linux/lib/libvirsim.so
+1709612498 /tools/svc/V-2023.12-SP1/linux/lib/liberrorinf.so
+1709612363 /tools/svc/V-2023.12-SP1/linux/lib/libsnpsmalloc.so
+1709612747 /tools/svc/V-2023.12-SP1/linux/lib/libvfs.so

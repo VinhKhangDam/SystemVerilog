@@ -1,0 +1,81 @@
+QuestaSim-64 qrun 2024.1 Utility 2024.02 Feb  1 2024
+Start time: 11:20:19 on Apr 17,2025
+qrun arrays_method.sv "+acc" "+r" 
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+Start time: 11:20:19 on Apr 17,2025
+vlog arrays_method.sv -work ./work -statslog qrun.out/stats_log -writesessionid "+qrun.out/top_dus" -csession=incr -csessionid=0 
+-- Compiling module method
+
+Top level modules:
+	method
+End time: 11:20:19 on Apr 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+Start time: 11:20:19 on Apr 17,2025
+vopt "+acc" -findtoplevels /home/khang/Documents/my_code/SystemVerilog/arrays_method/work+0+ -work ./work -statslog qrun.out/stats_log -csession=incr -o qrun_opt -csessionid=1 
+
+Top level modules:
+	method
+
+Analyzing design...
+-- Loading module method
+Incremental compilation check found no design-units (out of 1) may be reused.
+Optimizing 1 design-unit (inlining 0/1 module instances):
+-- Optimizing module method(fast)
+Optimized design name is qrun_opt
+End time: 11:20:19 on Apr 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+# vsim "+r" -lib ./work -c -do "run -all; quit -f" -statslog qrun.out/stats_log qrun_opt -appendlog -l qrun.log -csession=incr -csessionid=2 
+# Start time: 11:20:21 on Apr 17,2025
+# //  Questa Sim-64
+# //  Version 2024.1 linux_x86_64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.method(fast)
+# run -all
+# Sum all elements in arrays is : 18
+# Product all elements in arrays is : 24
+# And all elements in arrays is : 00000000
+# The queue q is: '{1, 3, 5, 7}, and the min value is:'{1}
+# The dynamic arrays d is: '{2, 4, 6, 8, 10}, and the max value is:'{10}
+# The fixed arrays f is: '{1, 6, 2, 6, 8, 6}, and unique is:'{1, 2, 6, 8}
+# The elements in a[] is '{9, 1, 8, 3, 4, 4} and item > 3 are '{9, 8, 4, 4}:
+# The elements in a[] is '{9, 1, 8, 3, 4, 4} and item > 3 are '{0, 2, 4, 5}:
+# The elements in a[] is '{9, 1, 8, 3, 4, 4} and first item > 99 are '{}:
+# The elements in a[] is '{9, 1, 8, 3, 4, 4} and first index item == 8 are '{2}:
+# The elements in a[] is '{9, 1, 8, 3, 4, 4} and last item = 4 are '{4}:
+# The elements in a[] is '{9, 1, 8, 3, 4, 4} and last index item == 4 are '{5}:
+# The elements of b are: '{9, 1, 8, 3, 4, 4} and count number of elements which > 7:0
+# The elements of b are: '{9, 1, 8, 3, 4, 4} and count number of elements which > 7:17
+# The elements of b are: '{9, 1, 8, 3, 4, 4} and count number of elements which < 7:0
+# The elements of b are: '{9, 1, 8, 3, 4, 4} and count number of elements which < 7:12
+# The elements of b are: '{9, 1, 8, 3, 4, 4} and count number of elements which = 7:0
+# c arrays sort : '{'{r:3, g:2, b:9}, '{r:5, g:2, b:1}, '{r:7, g:4, b:9}}
+# c arrays sort : '{'{r:5, g:2, b:1}, '{r:3, g:2, b:9}, '{r:7, g:4, b:9}}
+# elements#6 aa[30] = 64
+# Reverse the z array: '{4, 4, 3, 8, 1, 9}
+# Sort the z array: '{1, 3, 4, 4, 8, 9}
+# Resort the z array: '{9, 8, 4, 4, 3, 1}
+# Shuffle the z array: '{1, 4, 4, 8, 9, 3}
+#  quit -f
+# End time: 11:20:21 on Apr 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+End time: 11:20:21 on Apr 17,2025, Elapsed time: 0:00:02
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vlog: Errors:   0, Warnings:   0
+    vopt: Errors:   0, Warnings:   1
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   1

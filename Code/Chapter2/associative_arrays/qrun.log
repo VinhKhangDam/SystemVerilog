@@ -1,0 +1,72 @@
+QuestaSim-64 qrun 2024.1 Utility 2024.02 Feb  1 2024
+Start time: 09:13:59 on Apr 17,2025
+qrun associative_arrays.sv "+acc" "+r" 
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+Start time: 09:13:59 on Apr 17,2025
+vlog associative_arrays.sv -work ./work -statslog qrun.out/stats_log -writesessionid "+qrun.out/top_dus" -csession=incr -csessionid=0 
+-- Compiling module associavtive_arrays
+
+Top level modules:
+	associavtive_arrays
+End time: 09:13:59 on Apr 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+Start time: 09:13:59 on Apr 17,2025
+vopt "+acc" -findtoplevels /home/khang/Documents/my_code/SystemVerilog/associative_arrays/work+0+ -work ./work -statslog qrun.out/stats_log -csession=incr -o qrun_opt -csessionid=2 
+
+Top level modules:
+	associavtive_arrays
+
+Analyzing design...
+-- Loading module associavtive_arrays
+Incremental compilation check found no design-units (out of 1) may be reused.
+Optimizing 1 design-unit (inlining 0/1 module instances):
+-- Optimizing module associavtive_arrays(fast)
+Optimized design name is qrun_opt
+End time: 09:14:00 on Apr 17,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+# vsim "+r" -lib ./work -c -do "run -all; quit -f" -statslog qrun.out/stats_log qrun_opt -appendlog -l qrun.log -csession=incr -csessionid=3 
+# Start time: 09:14:02 on Apr 17,2025
+# //  Questa Sim-64
+# //  Version 2024.1 linux_x86_64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.associavtive_arrays(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /associavtive_arrays/#ublk#100195907#26 File: associative_arrays.sv Line: 30
+# run -all
+# Assoc[80] = 80
+# Assoc[01] = 01
+# Assoc[02] = 02
+# Assoc[04] = 04
+# Assoc[08] = 08
+# Assoc[10] = 10
+# Assoc[20] = 20
+# Assoc[40] = 40
+# assoc[80] = 80
+# assoc[01] = 01
+# assoc[02] = 02
+# assoc[04] = 04
+# assoc[08] = 08
+# assoc[10] = 10
+# assoc[20] = 20
+# assoc[40] = 40
+# The array has 7 elements
+# Break key hit
+# Break in Module associavtive_arrays at associative_arrays.sv line 30
+# Stopped at associative_arrays.sv line 30
+#  quit -f
+# End time: 09:15:00 on Apr 17,2025, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 1

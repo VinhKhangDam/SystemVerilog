@@ -1,0 +1,87 @@
+QuestaSim-64 qrun 2024.1 Utility 2024.02 Feb  1 2024
+Start time: 11:01:36 on Apr 19,2025
+qrun type_conversion.sv "+acc" "+r" 
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+Start time: 11:01:36 on Apr 19,2025
+vlog type_conversion.sv -work ./work -statslog qrun.out/stats_log -writesessionid "+qrun.out/top_dus" -csession=incr -csessionid=0 
+-- Compiling module convert
+** Warning: type_conversion.sv(16): (vlog-2244) Variable 'j' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+** Warning: type_conversion.sv(38): (vlog-2244) Variable 'wq' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+** Warning: type_conversion.sv(61): (vlog-2244) Variable 'st' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+
+Top level modules:
+	convert
+End time: 11:01:36 on Apr 19,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 3
+QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+Start time: 11:01:36 on Apr 19,2025
+vopt "+acc" -findtoplevels /home/khang/Documents/my_code/SystemVerilog/type_conversion/work+0+ -work ./work -statslog qrun.out/stats_log -csession=incr -o qrun_opt -csessionid=1 
+
+Top level modules:
+	convert
+
+Analyzing design...
+-- Loading module convert
+Incremental compilation check found no design-units (out of 1) may be reused.
+Optimizing 1 design-unit (inlining 0/1 module instances):
+-- Optimizing module convert(fast)
+** Warning: type_conversion.sv(16): (vopt-2244) Variable 'j' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+** Warning: type_conversion.sv(38): (vopt-2244) Variable 'wq' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+** Warning: type_conversion.sv(61): (vopt-2244) Variable 'st' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+Optimized design name is qrun_opt
+End time: 11:01:36 on Apr 19,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 4
+# vsim "+r" -lib ./work -c -do "run -all; quit -f" -statslog qrun.out/stats_log qrun_opt -appendlog -l qrun.log -csession=incr -csessionid=2 
+# Start time: 11:01:37 on Apr 19,2025
+# //  Questa Sim-64
+# //  Version 2024.1 linux_x86_64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.convert(fast)
+# run -all
+# Value convert: 10, 42
+#1:b030d050
+#2:0a0b0c0d
+#3:0d0c0b0a
+#4:'{13, 12, 11, 10}
+#5:01101101
+#6:01010011
+#7:0a0b0c0d
+#8:0d0c0b0a
+# bq first : '{18, 52, 86, 120}
+# bq second : '{152, 118, 84, 50}
+# wq first : '{19498, 28185}
+# b = aa aa aa aa bb cc cc dd dd dd dd
+# b = 11 22 33 44 55 66 77 88 99 aa bb cc dd
+# c = 11 22 33 44 55 66 77 88 99 aa bb cc dd
+# Next state is DECODE
+# Color is 2 / GREEN
+# c2 is 3 / ''
+#  quit -f
+# End time: 11:01:38 on Apr 19,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+End time: 11:01:38 on Apr 19,2025, Elapsed time: 0:00:02
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vlog: Errors:   0, Warnings:   3
+    vopt: Errors:   0, Warnings:   4
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   7

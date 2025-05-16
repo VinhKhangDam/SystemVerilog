@@ -1,0 +1,12 @@
+- Entry: 1
+  Time: Sat Apr 19 11:28:27 2025
+  Command: qverilog expression.sv +acc =r 
+- Entry: 2
+  Time: Sat Apr 19 11:28:31 2025
+  Command: qverilog expression.sv +acc =r 
+- Entry: 3
+  Time: Sat Apr 19 11:28:34 2025
+  Command: qverilog expression.sv +acc +r 
+- Entry: 4
+  Time: Sat Apr 19 11:29:06 2025
+  Command: qverilog expression.sv +acc +r 

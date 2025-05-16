@@ -1,0 +1,33 @@
+- Entry: 1
+  Time: Tue Apr 15 17:24:38 2025
+  Command: qverilog packed_arrays.sv 
+- Entry: 2
+  Time: Tue Apr 15 17:25:18 2025
+  Command: qverilog packed_arrays.sv 
+- Entry: 3
+  Time: Tue Apr 15 17:33:41 2025
+  Command: qverilog packed_arrays.sv 
+- Entry: 4
+  Time: Tue Apr 15 17:33:59 2025
+  Command: qverilog packed_arrays.sv 
+- Entry: 5
+  Time: Tue Apr 15 17:34:26 2025
+  Command: qverilog packed_arrays.sv 
+- Entry: 6
+  Time: Tue Apr 15 17:36:43 2025
+  Command: qverilog packed_arrays.sv 
+- Entry: 7
+  Time: Tue Apr 15 21:49:51 2025
+  Command: qverilog packed_arrays.sv 
+- Entry: 8
+  Time: Tue Apr 15 21:50:18 2025
+  Command: qverilog packed_arrays.sv +acc +r 
+- Entry: 9
+  Time: Tue Apr 15 21:50:28 2025
+  Command: qverilog packed_arrays.sv +acc +r 
+- Entry: 10
+  Time: Tue Apr 15 21:56:04 2025
+  Command: qverilog packed_arrays.sv +acc +r 
+- Entry: 11
+  Time: Tue Apr 15 21:56:22 2025
+  Command: qverilog packed_arrays.sv +acc +r 

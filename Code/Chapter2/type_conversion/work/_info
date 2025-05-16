@@ -1,0 +1,67 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/khang/Documents/my_code/SystemVerilog/type_conversion
+vconvert
+2type_conversion.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1745035296
+!i10b 1
+!s100 Y]`aZS9`3cU=E;2VcEAzX0
+IKOjOMHUhH?dL4<2YQALWQ0
+S1
+R1
+w1745035293
+8type_conversion.sv
+Ftype_conversion.sv
+!i122 0
+L0 1 99
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2024.1;79
+r1
+!s85 0
+31
+!s108 1745035296.000000
+!s107 type_conversion.sv|
+!s90 type_conversion.sv|-work|./work|-statslog|qrun.out/stats_log|-writesessionid|+qrun.out/top_dus|-csession=incr|-csessionid=0|
+!i113 0
+o-work ./work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z3 tCvgOpt 0
+Tqrun_opt
+R2
+V2n@kZ7CWL@gPMgN@z5^fh0
+04 7 4 work convert fast 0
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o+acc -work ./work
+R3
+nqrun_opt
+OL;O;2024.1;79

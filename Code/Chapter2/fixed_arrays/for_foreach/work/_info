@@ -1,0 +1,50 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/khang/Documents/my_code/SystemVerilog/arrays/for_foreach
+vfor_foreach
+2for_foreach.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1744688249
+!i10b 1
+!s100 S:jM@]JH0cWfPKFC:]E]42
+Iho^Me:[T0Z8GaMK7>P^zL3
+S1
+R1
+w1744688247
+8for_foreach.sv
+Ffor_foreach.sv
+!i122 0
+L0 1 15
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2024.1;79
+r1
+!s85 0
+31
+!s108 1744688249.000000
+!s107 for_foreach.sv|
+!s90 for_foreach.sv|-work|./work|-statslog|qrun.out/stats_log|-writesessionid|+qrun.out/top_dus|-csession=incr|-csessionid=0|
+!i113 0
+o-work ./work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z3 tCvgOpt 0
+Tqrun_opt
+R2
+V]KQz]Xm1;^_CDOH]<P>NC3
+04 11 4 work for_foreach fast 0
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o+acc -work ./work
+R3
+nqrun_opt
+OL;O;2024.1;79

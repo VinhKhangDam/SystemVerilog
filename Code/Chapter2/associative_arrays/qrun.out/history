@@ -1,0 +1,24 @@
+- Entry: 1
+  Time: Thu Apr 17 08:57:38 2025
+  Command: qverilog associative_arrays.sv 
+- Entry: 2
+  Time: Thu Apr 17 08:58:08 2025
+  Command: qverilog associative_arrays.sv +acc +r 
+- Entry: 3
+  Time: Thu Apr 17 08:58:40 2025
+  Command: qverilog associative_arrays.sv +acc +r 
+- Entry: 4
+  Time: Thu Apr 17 09:09:25 2025
+  Command: qverilog associative_arrays.sv +acc +r 
+- Entry: 5
+  Time: Thu Apr 17 09:09:50 2025
+  Command: qverilog associative_arrays.sv +acc +r 
+- Entry: 6
+  Time: Thu Apr 17 09:12:17 2025
+  Command: qverilog associative_arrays.sv +acc +r 
+- Entry: 7
+  Time: Thu Apr 17 09:13:29 2025
+  Command: qverilog associative_arrays.sv +acc +r 
+- Entry: 8
+  Time: Thu Apr 17 09:13:59 2025
+  Command: qverilog associative_arrays.sv +acc +r 

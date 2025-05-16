@@ -1,0 +1,65 @@
+QuestaSim-64 qrun 2024.1 Utility 2024.02 Feb  1 2024
+Start time: 14:41:49 on Apr 16,2025
+qrun dynamic_arrays.sv "+acc" "+r" 
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+Start time: 14:41:49 on Apr 16,2025
+vlog dynamic_arrays.sv -work ./work -statslog qrun.out/stats_log -writesessionid "+qrun.out/top_dus" -csession=incr -csessionid=0 
+-- Compiling module test
+
+Top level modules:
+	test
+End time: 14:41:50 on Apr 16,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+Start time: 14:41:50 on Apr 16,2025
+vopt "+acc" -findtoplevels /home/khang/Documents/my_code/SystemVerilog/dynamic_arrays/work+0+ -work ./work -statslog qrun.out/stats_log -csession=incr -o qrun_opt_1 -csessionid=3 
+
+Top level modules:
+	test
+
+Analyzing design...
+-- Loading module test
+Incremental compilation check found no design-units (out of 1) may be reused.
+Optimizing 1 design-unit (inlining 0/1 module instances):
+-- Optimizing module test(fast)
+Optimized design name is qrun_opt_1
+End time: 14:41:52 on Apr 16,2025, Elapsed time: 0:00:02
+Errors: 0, Warnings: 1
+# vsim "+r" -lib ./work -c -do "run -all; quit -f" -statslog qrun.out/stats_log qrun_opt_1 -appendlog -l qrun.log -csession=incr -csessionid=4 
+# Start time: 14:41:56 on Apr 16,2025
+# //  Questa Sim-64
+# //  Version 2024.1 linux_x86_64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.test(fast)
+# run -all
+# '{'{0}, '{10, 11}, '{20, 21, 22}, '{30, 31, 32, 33}}
+# q = '{0, 1, 2, 5} | j = 1
+# q = '{0, 1, 2, 3, 4, 5} | j = 1
+# q = '{0, 2, 3, 4, 5} | j = 1
+# q = '{2, 0, 2, 3, 4, 5} | j = 1
+# q = '{2, 0, 2, 3, 4} | j = 5
+# q = '{2, 0, 2, 3, 4, 8} | j = 5
+# q = '{0, 2, 3, 4, 8} | j = 2
+#  quit -f
+# End time: 14:41:57 on Apr 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+End time: 14:41:57 on Apr 16,2025, Elapsed time: 0:00:08
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vlog: Errors:   0, Warnings:   0
+    vopt: Errors:   0, Warnings:   1
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   1

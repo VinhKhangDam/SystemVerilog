@@ -1,0 +1,8 @@
+{"vcs1":{"timestamp_begin":1744773602.300287847, "rt":10.23, "ut":0.10, "st":0.17}}
+Command exited with non-zero status 127
+{"vcselab":{"timestamp_begin":1744773612.599788287, "rt":0.34, "ut":0.00, "st":0.00}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1744773602.116550083}
+{"VCS_COMP_START_TIME": 1744773602.116550083}
+{"VCS_COMP_END_TIME": 1744773612.962863877}
+{"VCS_USER_OPTIONS": "dynamic_arrays.sv -sverilog"}
+{"vcs1": {"peak_mem": 515440}}
